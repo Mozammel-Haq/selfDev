@@ -21,15 +21,29 @@
                         </div>
                         <nav class="header-center">
                             <ul>
-                                <li><a href="http://127.0.0.1:5500/ecom-landing/home.html">Home</a></li>
-                                <li><a href="http://127.0.0.1:5500/ecom-landing/products.html">Products</a></li>
-                                <li><a href=http://127.0.0.1:5500/ecom-landing/contact.html">Contact</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#contacts">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header-right">
                             <div class="icons">
                                 <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-cart-arrow-down"></i>
+                                <div id="cart-icon">                                <i class="fa-solid fa-cart-arrow-down"></i></div>
+
+
+                                <ul class="cart-menu">
+                                    <li>
+                                        <div class="qty-group">
+                                            <button><i class="fa-solid fa-plus"></i></button>
+                                            <span class="qty">1</span>
+                                            <button><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                        <h3 class="product-name">Product 1</h3>
+                                        <button class="remove-qty">Delete</button>
+                                    </li>
+                                </ul>
+
                             </div>
                             <div class="account">
                                 <button class="btn-primary">Sign Up</button>
@@ -60,7 +74,88 @@
             </div>
         </section>
 
+        <!-- Products Section -->
+
+        <section id="products">
+
+            <div class="container">
+                <div class="product-list">
+                    <div class="product card">
+                        <div class="photo">
+                            <img src="./img/1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Product 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <div class="price">
+                                <span class="original">$500</span>
+                                <span class="discount">$450</span>
+                            </div>
+                            <button class="buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product card">
+                        <div class="photo">
+                            <img src="./img/2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Product 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae nostrum tenetur ducimus velit veritatis?</p>
+                            <div class="price">
+                                <span class="original">$500</span>
+                                <span class="discount">$450</span>
+                            </div>
+                            <button class="buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product card">
+                        <div class="photo">
+                            <img src="./img/3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Product 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <div class="price">
+                                <span class="original">$500</span>
+                                <span class="discount">$450</span>
+                            </div>
+                            <button class="buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product card">
+                        <div class="photo">
+                            <img src="./img/4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Product 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <div class="price">
+                                <span class="original">$500</span>
+                                <span class="discount">$450</span>
+                            </div>
+                            <button class="buy">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+        <!-- Products Section -->
+
+        <section id="contact"></section>
+
     </main> 
 
+
+
+
+    <script src="./js/script.js">
+
+    </script>
 </body>
 </html>
